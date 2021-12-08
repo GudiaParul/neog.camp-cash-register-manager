@@ -7,7 +7,7 @@ const message = document.querySelector("#error-message");
 var availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 
 function calculateChange(amountToBeReturned) {
-hideMessage();
+  hideMessage();
   for (let i = 0; i < availableNotes.length; i++) {
     var numberOfNotes = Math.trunc(amountToBeReturned / availableNotes[i]);
     amountToBeReturned = amountToBeReturned % availableNotes[i];
